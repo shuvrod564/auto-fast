@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
  
-export const metadata = {
-  title: 'Auto Fast Car Reservation App',
-  description: ''
-}
+// export const metadata = {
+//   title: 'Auto Fast Car Reservation App',
+//   description: ''
+// }
 
 export default function Home() {
   return (

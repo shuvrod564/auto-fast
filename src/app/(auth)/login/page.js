@@ -1,13 +1,12 @@
 'use client'
 import LoginForm from '@components/components/LoginForm'
-import React from 'react'
-import { Metadata } from 'next' 
+import React from 'react' 
  
 
-export const metadata  = {
-  title: 'Log In',
-  description: 'Auto Fast - Login'
-}
+// export const metadata  = {
+//   title: 'Log In',
+//   description: 'Auto Fast - Login'
+// }
 
 const Login = () => {
   
