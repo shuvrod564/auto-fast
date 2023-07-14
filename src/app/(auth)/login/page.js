@@ -3,10 +3,10 @@ import LoginForm from '@components/components/LoginForm'
 import React from 'react' 
  
 
-// export const metadata  = {
-//   title: 'Log In',
-//   description: 'Auto Fast - Login'
-// }
+export const metadata  = {
+  title: 'Log In',
+  description: 'Auto Fast - Login'
+}
 
 const Login = () => {
   

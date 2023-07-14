@@ -10,17 +10,8 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter'
 })
-const pt_sans = Fira_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-pt'
-})
-const bruno = Bruno_Ace({
-  subsets: ['latin'],
-  weight: ['400'],
-  display: 'swap',
-  variable: '--font-bruno'
-})
+ 
+ 
 
 // export const metadata = {
 //   title: 'Create Next App',
@@ -36,7 +27,7 @@ export default function RootLayout({ children, session }) {
   if(routerpath === '/login' || routerpath === '/signup') {
     return (
       <html lang="en">
-        <body className={`${inter.className} ${bruno.className}`}>
+        <body className={`${inter.className}`}>
        
           {children}
        
@@ -47,7 +38,7 @@ export default function RootLayout({ children, session }) {
 
   return (
     <SessionProvider session={session}> 
-      <html lang="en" className={`${inter.className} ${bruno.className}`}>
+      <html lang="en" className={`${inter.className}`}>
         <body>
           <Header />
           {children}

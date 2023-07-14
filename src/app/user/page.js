@@ -5,10 +5,10 @@ import React from 'react'
 import { useSession, getSession } from 'next-auth/react';
 import Router, { useRouter } from 'next/navigation';
 
-// export const metadata = {
-//     title: 'User Dashboard',
-//     description: ''
-// }
+export const metadata = {
+    title: "User Dashboard",
+    description: ""
+}
 const page = () => {
     const {data:session, status} = useSession();
 
