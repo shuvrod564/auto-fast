@@ -2,10 +2,10 @@
 import React, { useState } from 'react'
 import Select from 'react-select'
 
-export const metadata = {
-    title: 'Create a reservation',
-    description: 'Create a reservation for car.'
-}
+// export const metadata = {
+//     title: 'Create a reservation',
+//     description: 'Create a reservation for car.'
+// }
 
 const reservationType = [
     { value: 'Custom Trip', label: 'Custom Trip' },
