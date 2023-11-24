@@ -1,12 +1,22 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"; 
  
 export const metadata = {
   title: "Auto Fast Car Reservation App",
   description: "Auto Fast Car Reservation App"
 }
 
-export default function Home() {
+
+export async function getServerSideProps() {
+  const res = await fetch('http://json-apis.suvroweb.com/home.json');
+  return res.json();
+  
+}
+
+export default async function  Home() { 
+  const data = await getServerSideProps();
+  console.log('home data:-', data);
+
   return (
     <main className="">
         <div className="-mt-20">

@@ -19,6 +19,7 @@ body { background-color: #f2f4f7;font-family: var(--font-inter); }
 }
 
 
+.h1 { @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold }
 .h2 { @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold }
 
 .form-control { -webkit-appearance: none;border-color: rgba(0, 0, 0, 0.2); @apply w-full h-11 border px-4 py-2 text-black font-medium rounded-md }
@@ -26,3 +27,8 @@ body { background-color: #f2f4f7;font-family: var(--font-inter); }
 textarea.form-control { height: auto; }
 
 a { @apply transition-all duration-300 }
+
+.page__header {
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+  @apply py-14 md:py-20 -mt-20 min-h-[340px] flex items-end 
+}

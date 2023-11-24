@@ -6,8 +6,9 @@ import Footer from '@components/components/Footer'
 import { usePathname } from 'next/navigation'
 import { SessionProvider, useSession } from 'next-auth/react';
 
-const inter = Inter({ 
+const inter = Fira_Sans({ 
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-inter'
 })
  
@@ -20,21 +21,21 @@ const inter = Inter({
 
 export default function RootLayout({ children, session }) {
  
-  console.log(session);
+  // console.log(session);
   const routerpath = usePathname();
   // console.log(routerpath);
 
-  if(routerpath === '/login' || routerpath === '/signup') {
-    return (
-      <html lang="en">
-        <body className={`${inter.className}`}>
+  // if(routerpath === '/login' || routerpath === '/signup') {
+  //   return (
+  //     <html lang="en">
+  //       <body className={`${inter.className}`}>
        
-          {children}
+  //         {children}
        
-        </body>
-      </html>
-    )
-  }
+  //       </body>
+  //     </html>
+  //   )
+  // }
 
   return (
     <SessionProvider session={session}> 

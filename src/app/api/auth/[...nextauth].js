@@ -14,13 +14,13 @@ const handler= NextAuth({
             },
             async authorize(credentials, req) {
                 // create dummy user
-                // const user = { id:'1', email: 'jhon@gmail.com', password: '12345' }
+                const user = { id:'1', email: 'jhon@gmail.com', password: '12345' }
 
-                // if(user) {
-                //     return user;
-                // } else {
-                //     return null;
-                // }
+                if(user) {
+                    return user;
+                } else {
+                    return null;
+                }
 
                 // if(email !== 'jhon@gmail.com' && password !== '12345') {
                 //     return null;

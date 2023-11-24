@@ -11,7 +11,7 @@ const Footer = () => {
         </Link>
         <ul className="inline-flex">
             <li className='mr-4 md:mr-5'><Link href={'/'} className='text-white'>Privacy Policy</Link></li>
-            <li><Link href={'/'} className='text-white'>Terms & Conditions</Link></li>
+            <li><Link href={'/terms'} className='text-white'>Terms & Conditions</Link></li>
         </ul>
       </div>
     </footer>

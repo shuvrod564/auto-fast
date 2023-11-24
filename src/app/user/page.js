@@ -10,19 +10,28 @@ export const metadata = {
     description: ""
 }
 const page = () => {
-    const {data:session, status} = useSession();
+    // const {data:session, status} = useSession();
 
-    const router = useRouter();
+    // const router = useRouter();
 
-    if (status.ok) 
-    {
-        return <div className="p5">Loading</div>
-    }
-    else if (session) 
-    {
+    // if (status.ok) 
+    // {
+    //     return <div className="p5">Loading</div>
+    // }
+    // else if (session) 
+    // {
         
-        return (
-          <main className='pt-5 pb-14 min-h-[90vh]'>
+    //     return (
+          
+    //     )
+    // } 
+    // else 
+    // {
+
+    //     return router.push('/auth/login');
+    // }
+
+    <main className='pt-5 pb-14 min-h-[90vh]'>
               <div className="container"> 
                   <div className="py-10 md:py-14 lg:py-20 px-8 lg:px-10 bg-no-repeat bg-cover bg-center" style={{backgroundImage:`url('/global/user-dashbard-image.webp')`,boxShadow: 'inset 0 0 0 2000px rgba(0,0,0,0.75'}}>
                       <div className="flex flex-wrap justify-between items-center">
@@ -155,13 +164,6 @@ const page = () => {
                   </div>
               </div>
           </main>
-        )
-    } 
-    else 
-    {
-
-        return router.push('/auth/login');
-    }
 }
 
 export default page
