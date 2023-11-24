@@ -7,15 +7,15 @@ export const metadata = {
 }
 
 
-export async function getServerSideProps() {
-  const res = await fetch('http://json-apis.suvroweb.com/home.json');
-  return res.json();
+// export async function getServerSideProps() {
+//   const res = await fetch('http://json-apis.suvroweb.com/home.json');
+//   return res.json();
   
-}
+// }
 
-export default async function  Home() { 
-  const data = await getServerSideProps();
-  console.log('home data:-', data);
+export default function  Home() { 
+  // const data = await getServerSideProps();
+  // console.log('home data:-', data);
 
   return (
     <main className="">
