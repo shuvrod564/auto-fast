@@ -1,9 +1,7 @@
-'use client'
+ 
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import { useSession, getSession } from 'next-auth/react';
-import Router, { useRouter } from 'next/navigation';
+import React from 'react' 
 
 export const metadata = {
     title: "User Dashboard",
