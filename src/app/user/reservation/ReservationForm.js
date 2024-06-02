@@ -35,12 +35,12 @@ function ReservationForm() {
 
     return (
         <div className="p-8 shadow bg-white rounded-lg overflow-hidden">
-            <form lassName='flex flex-wrap -mx-2'>
-                <div className="lg:w-[50%] sm:w-1/2 w-full px-2 mt-5">
+            <form className=' flex flex-wrap flex-row'>
+                <div className="lg:w-[48%] sm:w-1/2 w-full px-2 mt-5">
                     <label htmlFor="what_type_reservation" className='block mb-1 text-[#444]'>What type of reservation?</label>
                     <Select options={reservationType} value={reservation} onChange={(event) => setReservation(event)} />
                 </div>
-                <div className="lg:w-[50%] sm:w-1/2 w-full px-2 mt-5">
+                <div className="lg:w-[48%] sm:w-1/2 w-full px-2 mt-5">
                     <label htmlFor="what_type_reservation" className='block mb-1 text-[#444]'>What vehicle?</label>
                     <Select options={vechileType} value={vehicle} onChange={(event) => setVehicle(event)} />
                 </div>

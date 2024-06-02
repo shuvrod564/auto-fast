@@ -18,7 +18,7 @@ const page = () => {
         </div>
 
         <div className="container">
-                <ReservationForm />
+            <ReservationForm />
             
         </div>
         
