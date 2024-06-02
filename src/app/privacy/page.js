@@ -57,7 +57,7 @@ const page = () => {
 
                         <h2 className='text-lg sm:text-xl font-semibold mt-5 md:mt-7 lg:mt-9 mb-2'>Disclaimer of Warranties:</h2>
                         <ul>
-                            <li>a. The Website provides the car reservation service "as is" and "as available" without any warranties or representations, whether express or implied. The Website disclaims all warranties of any kind, including but not limited to merchantability, fitness for a particular purpose, and non-infringement.</li>
+                            <li>a. The Website provides the car reservation service &apos;as is&apos; and &apos;as available&apos; without any warranties or representations, whether express or implied. The Website disclaims all warranties of any kind, including but not limited to merchantability, fitness for a particular purpose, and non-infringement.</li>
                             <li>b. The Website does not warrant the accuracy, completeness, reliability, or availability of any information or content provided through the Website.</li>
                         </ul>
 
@@ -71,7 +71,7 @@ const page = () => {
 
 
                         <h2 className='text-lg sm:text-xl font-semibold mt-5 md:mt-7 lg:mt-9 mb-2'>Indemnification:</h2>
-                        <p>You agree to indemnify, defend, and hold harmless the Website and its affiliates, directors, officers, employees, agents, or licensors from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys' fees) arising out of or related to your use of the Website or any violation of these Terms.</p>
+                        <p>You agree to indemnify, defend, and hold harmless the Website and its affiliates, directors, officers, employees, agents, or licensors from any claims, liabilities, damages, losses, costs, or expenses (including reasonable attorneys&apos; fees) arising out of or related to your use of the Website or any violation of these Terms.</p>
 
                         <h2 className='text-lg sm:text-xl font-semibold mt-5 md:mt-7 lg:mt-9 mb-2'>Modification of Terms:</h2>
                         <p>The Website reserves the right to modify or update these Terms at any time without prior notice. The revised Terms will be effective upon posting on the Website. Your continued use of the Website after the posting of the revised Terms constitutes your acceptance of such changes.</p>

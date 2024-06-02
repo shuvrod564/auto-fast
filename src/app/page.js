@@ -59,7 +59,7 @@ export default function  Home() {
                 <div className="absolute top-0 left-0 w-full h-full bg-[#3e3ecccf]"></div>
                 <div className="relative z-20"> 
                   <h2 className="text-white text-xl sm:text-2xl md:text-2xl capitalize font-bold mb-2">No hidden fees</h2>
-                  <p className="text-white mb-3 min-h-[3rem]">Know exactly what you're paying</p>
+                  <p className="text-white mb-3 min-h-[3rem]">Know exactly what you&apos;re paying</p>
                   <Link href={'/'} className="px-3 py-2 font-medium bg-[#8F47D7] text-white inline-block uppercase text-sm rounded-sm transition-all duration-200 hover:bg-red-700">Book Now</Link>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function  Home() {
                 <div className="absolute top-0 left-0 w-full h-full bg-[#3e3ecccf]"></div>
                 <div className="relative z-20"> 
                   <h2 className="text-white text-xl sm:text-2xl md:text-2xl capitalize font-bold mb-2">Price Match Guarantee</h2>
-                  <p className={`text-white mb-3 `}>Found the same deal for less? We’ll match the price.</p>
+                  <p className={`text-white mb-3 `}>Found the same deal for less? We&apos;ll match the price.</p>
                   <Link href={'/'} className="px-3 py-2 font-medium bg-[#8F47D7] text-white inline-block uppercase text-sm rounded-sm transition-all duration-200 hover:bg-red-700">Book Now</Link>
                 </div>
               </div>
