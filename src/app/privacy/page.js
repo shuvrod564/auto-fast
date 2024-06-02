@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 
 export const metadata = {
-    title: 'Terms & Conditions',
+    title: 'Privacy Policy',
     description: ''
 }
 
@@ -12,7 +12,7 @@ const page = () => {
             <main>
                 <header className="bg-no-repeat bg-center page__header" style={{ backgroundImage: `url(/global/terms-conditions-banner.webp)` }}>
                     <div className="container">
-                        <h1 className="h1 text-white font-bold text-center">Terms & Conditions</h1>
+                        <h1 className="h1 text-white font-bold text-center">Privacy Policy</h1>
                     </div>
                 </header>
                 <section className='py-10'>

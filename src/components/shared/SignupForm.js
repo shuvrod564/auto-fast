@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
-const LoginForm = () => {
+const SignupForm = () => {
  
     const router = useRouter()
 
@@ -69,11 +69,10 @@ const LoginForm = () => {
         <Link href={'/'} className='inline-block mb-4'>
             <Image src={'/auto-fast-logo.webp'} alt='logo' width={120} height={53} />
           </Link>
-        <h1 className="h2 mb-2">Sign In</h1>
-        <p className='mb-3 text-gray-500'>Welcome back!</p>
+        <h1 className="h2 mb-2">Sign up</h1>
+        <p className='mb-3 text-gray-500'>Welcome to Auto Fast!</p>
       </div>
 
- 
       <div className="mb-4">
         <label htmlFor="user_name" className='block text-base sm:text-lg font-sans font-semibold mb-2'>User Name</label>
         <input 
@@ -96,8 +95,8 @@ const LoginForm = () => {
         credentialerror ?? <div className='text-red-500 p-8 text-center '>{credentialerror}</div>
       }
       <div className="flex justify-between">
-        <button type='submit' className="text-base px-5 py-2 bg-[#1976D2] text-white rounded-[4px] transition-all duration-200 hover:bg-[#135ca5]">Sign In</button>
-        <Link href={'/signup'} className="text-base px-5 py-2 border border-[#1976D2] text-[#1976D2] rounded-[4px] transition-all duration-200 hover:bg-[#1976D2] hover:text-white">Sign Up</Link>
+        <button type='submit' className="text-base px-5 py-2 bg-[#1976D2] text-white rounded-[4px] transition-all duration-200 hover:bg-[#135ca5]">Sign Up</button>
+        <Link href={'/login'} className="text-base px-5 py-2 border border-[#1976D2] text-[#1976D2] rounded-[4px] transition-all duration-200 hover:bg-[#1976D2] hover:text-white">Sign in</Link>
       </div>
 
         <div className="text-center relative mt-6 lg:mt-10 lg:mb-9 mb-4">
@@ -115,4 +114,4 @@ const LoginForm = () => {
   )
 }
 
-export default LoginForm
+export default SignupForm

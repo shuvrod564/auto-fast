@@ -1,11 +1,11 @@
  
-import LoginForm from '@components/components/LoginForm'
+import SignupForm from '@components/components/shared/SignupForm'
 import React from 'react' 
  
 
 export const metadata  = {
-  title: 'Log In',
-  description: 'Auto Fast - Login'
+  title: 'Sign up',
+  description: 'Auto Fast - Sign Up'
 }
 
 const Login = () => {
@@ -20,7 +20,7 @@ const Login = () => {
           </div>
           <div className="form__wrapper sm:p-10 p-6">
             <div className="max-w-[450px] mx-auto py-5 sm:py-12 lg:py-0"> 
-              <LoginForm />
+              <SignupForm />
             </div>
           </div>
         </div>

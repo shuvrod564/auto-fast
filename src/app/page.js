@@ -30,9 +30,13 @@ export default function  Home() {
             {/* <div className="absolute top-0 left-0 w-full h-full z-10" style={{background: 'linear-gradient(134deg, rgba(71, 71, 215, 0.57) 2.15%, rgba(8, 129, 92, 0.00) 100%)'}}></div>
             <div className="absolute top-0 left-0 w-full h-full z-20" style={{background: 'rgba(71, 71, 215, 0.84)',backgroundBlendMode: 'multiply'}}></div> */}
             <div className="absolute bottom-0 left-0 w-full h-full flex items-center">
-              <div className="container"> 
+              <div className="container text-center lg:text-start"> 
                 <h1 className="text-2xl sm:text-4xl lg:text-7xl font-bold inline-block py-2 text-white capitalize">
-                  Find your next <br /> trip vehicles</h1>
+                  Find your next <br /> trip vehicles
+                </h1>
+                <div className="mt-4"> 
+                <Link href={'/user/reservation'} className="px-5 md:px-8 py-3 md:py-4 font-medium bg-[#8F47D7] text-white inline-block uppercase text-base md:text-lg rounded-lg transition-all duration-200 hover:bg-red-700">Book Now</Link>
+                </div>
               </div>
             </div>
           </div> 
@@ -117,21 +121,21 @@ export default function  Home() {
             <div className="bg-white p-8">
               <h2 className="text-center text-xl sm:text-2xl md:text-2xl lg:text-4xl capitalize font-semibold mb-5 sm:mb-8">AUTO FAST ACCEPTS</h2>
 
-              <div className="grid lg:grid-cols-5 gap-3">
-                <div className="shadow-md border border-gray-100 hover:shadow-lg">
-                  <Image src={'/cards/mastercard.webp'} alt="card" width={190} height={95} />
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                <div className="shadow-md border border-gray-100 hover:shadow-lg p-3">
+                  <Image src={'/cards/mastercard.webp'} alt="card" width={190} height={95} className="w-auto lg:h-16 md:h-14 sm:h-12 h-10 mx-auto" />
                 </div>
-                <div className="shadow-md border border-gray-100 hover:shadow-lg">
-                  <Image src={'/cards/visa.webp'} alt="card" width={190} height={95} />
+                <div className="shadow-md border border-gray-100 hover:shadow-lg p-3">
+                  <Image src={'/cards/visa.webp'} alt="card" width={190} height={95} className="w-auto lg:h-16 md:h-14 sm:h-12 h-10 mx-auto" />
                 </div>
-                <div className="shadow-md border border-gray-100 hover:shadow-lg">
-                  <Image src={'/cards/jcb.webp'} alt="card" width={190} height={95} />
+                <div className="shadow-md border border-gray-100 hover:shadow-lg p-3">
+                  <Image src={'/cards/jcb.webp'} alt="card" width={190} height={95} className="w-auto lg:h-16 md:h-14 sm:h-12 h-10 mx-auto" />
                 </div>
-                <div className="shadow-md border border-gray-100 hover:shadow-lg">
-                  <Image src={'/cards/sepa.webp'} alt="card" width={190} height={95} />
+                <div className="shadow-md border border-gray-100 hover:shadow-lg p-3">
+                  <Image src={'/cards/sepa.webp'} alt="card" width={190} height={95} className="w-auto lg:h-16 md:h-14 sm:h-12 h-10 mx-auto" />
                 </div>
-                <div className="shadow-md border border-gray-100 hover:shadow-lg">
-                  <Image src={'/cards/yandex.webp'} alt="card" width={190} height={95} />
+                <div className="shadow-md border border-gray-100 hover:shadow-lg p-3">
+                  <Image src={'/cards/yandex.webp'} alt="card" width={190} height={95} className="w-auto lg:h-16 md:h-14 sm:h-12 h-10 mx-auto" />
                 </div>
               </div>
             </div>
@@ -147,9 +151,9 @@ export default function  Home() {
               <div className="relative z-10 text-center"> 
                 <h2 className="text-3xl font-semibold mb-3 text-white">Create a new reservation for your next trip to Auto Fast</h2>
                 <p className="text-xl text-white mb-10">Reservations must be made 24 hours in advance*</p>
-                <Link href={'/'} className="inline-flex items-center py-4 px-6 bg-white text-black text-xl uppercase rounded-md border-2 border-white transition-all duration-300 hover:bg-gray-50 hover:text-black">
+                <Link href={'/user/reservation'} className="inline-flex items-center py-4 px-6 bg-white text-black text-xl uppercase rounded-md border-2 border-white transition-all duration-300 hover:bg-gray-50 hover:text-black">
                   <Image src="/car.svg" width={60} height={24} alt="car" />
-                  <span className="pl-3">Create Now </span>
+                  <span className="pl-3">Book a Reservation</span>
                 
                 </Link>
 
